@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Theo</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-[Poppins] scroll-smooth">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-transparent">
+      <div class="max-w-8xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="logo"></div>
+
+          <!-- Menu Desktop -->
+          <div class="hidden md:flex space-x-0">
+            <a
+              href="#home-page"
+              class="border border-white px-4 py-2 text-white hover:bg-blue-600 hover:text-white hover:border-blue-600 first:rounded-l-md last:rounded-r-md -ml-px transition"
+            >
+              Home
+            </a>
+            <a
+              href="#our-profile-page"
+              class="border border-white px-4 py-2 text-white hover:bg-blue-600 hover:text-white hover:border-blue-600 first:rounded-l-md last:rounded-r-md -ml-px transition"
+            >
+              Our Profile
+            </a>
+            <a
+              href="#portfolio-page"
+              class="border border-white px-4 py-2 text-white hover:bg-blue-600 hover:text-white hover:border-blue-600 first:rounded-l-md last:rounded-r-md -ml-px transition"
+            >
+              Portofolio
+            </a>
+            <a
+              href="#message-us-page"
+              class="border border-white px-4 py-2 text-white hover:bg-blue-600 hover:text-white hover:border-blue-600 first:rounded-l-md last:rounded-r-md -ml-px transition"
+            >
+              Message Us
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="flex md:hidden">
+            <button id="menuBtn" class="text-2xl text-gray-700">☰</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white px-4 pb-4">
+        <a href="#home-page" class="block py-2 text-gray-700">Home</a>
+        <a href="#our-profile-page" class="block py-2 text-gray-700"
+          >Our Profile</a
+        >
+        <a href="#portfolio-page" class="block py-2 text-gray-700"
+          >Portofolio</a
+        >
+        <a href="#message-us-page" class="block py-2 text-gray-700"
+          >Message Us</a
+        >
+      </div>
+    </nav>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+      <!-- Home Page -->
+      <section id="home-page" class="relative">
+        <div
+          class="relative h-[950px] bg-cover bg-center"
+          style="background-image: url('./Assets/nmixx-poster.jpg')"
+        >
+          <!-- overlay gelap -->
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <!-- content -->
+          <div
+            class="relative z-10 h-full flex flex-col items-center justify-center text-white text-center"
+          >
+            <h1 class="text-3xl font-bold" id="welcome-speech">
+              Welcome to Our Website
+            </h1>
+            <p class="mt-2 text-white/90">
+              We are glad to have you here. Explore our group and songs
+            </p>
+          </div>
+
+          <!-- TORN PAPER -->
+          <svg
+            class="absolute bottom-0 left-0 w-full h-24 drop-shadow-lg"
+            viewBox="0 0 1440 100"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#000000"
+              d="M0,40 C80,80 160,0 240,30 320,60 400,20 480,40
+                    560,60 640,10 720,30 800,50 880,20 960,40
+                    1040,60 1120,10 1200,30 1280,50 1360,20 1440,40
+                    L1440,100 L0,100 Z"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- Our Profile Page -->
+      <section
+        id="our-profile-page"
+        class="relative bg-black h-screen overflow-hidden"
+      >
+        <!-- TOP TORN -->
+        <svg
+          class="absolute -top-1 left-0 w-full h-20 rotate-180 z-20 pointer-events-none"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#000"
+            d="M0,40 C80,80 160,0 240,30 320,60 400,20 480,40
+            560,60 640,10 720,30 800,50 880,20 960,40
+            1040,60 1120,10 1200,30 1280,50 1360,20 1440,40
+            L1440,100 L0,100 Z"
+          />
+        </svg>
+
+        <!-- BACKGROUND -->
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('./Assets/nmixx-poster4.jpg')"
+        >
+          <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <!-- SCROLLABLE CONTENT -->
+        <div
+          class="relative z-10 h-full overflow-y-auto px-6 md:px-16 lg:px-32 py-24 text-white"
+        >
+          <!-- TEXT -->
+          <div class="max-w-6xl mx-auto text-center mb-16">
+            <h1 class="text-3xl font-bold mb-4">About NMIXX</h1>
+            <p
+              class="text-white/90 leading-relaxed whitespace-normal break-words"
+            >
+              NMIXX (Hangul: 엔믹스; Japanese: エンミックス; known pre-debut as
+              JYPn) is a six-member South Korean girl group under JYP
+              Entertainment, and the first JYP Entertainment group to have a
+              lore and a unique universe concept. Originally as seven, they
+              debuted on February 22, 2022 with the single album AD MARE. <br />
+              The name NMIXX is a compound word of the letter 'N', which stands
+              for "now, next, new, and the unknown," and the word 'MIX', which
+              symbolizes combination and diversity. When combined, the word
+              NMIXX is created, which stands for "the best combination to take
+              responsibility for a new era."
+            </p>
+          </div>
+
+          <!-- GRID 3x2 -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- CARD -->
+            <div
+              class="bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg"
+            >
+              <img
+                src="./Assets/lily.jpg"
+                class="h-52 w-full object-cover"
+                style="object-position: top 85%"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl">Lily</h2>
+                <h3 class="font-semibold">
+                  (Hangul: 릴리; full name Lily Jin Morrow)
+                </h3>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-white/80">
+                  <div class="font-semibold">Birthdate</div>
+                  <div>Oct. 17, 2002 (age 23)</div>
+
+                  <div class="font-semibold">Birthplace</div>
+                  <div>Marysville, Victoria, Australia</div>
+
+                  <div class="font-semibold">Nationality</div>
+                  <div>Korean / Australian</div>
+
+                  <div class="font-semibold">Zodiac sign</div>
+                  <div>♎️ Libra / 🐎 Horse</div>
+
+                  <div class="font-semibold">Position</div>
+                  <div>Main Vocalist</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg"
+            >
+              <img
+                src="./Assets/haewon.jpg"
+                class="h-52 w-full object-cover"
+                style="object-position: top 85%"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-xl">Haewon</h3>
+                <h3 class="font-semibold">Oh Hae-Won (Hangul: 오해원)</h3>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-white/80">
+                  <div class="font-semibold">Birthdate</div>
+                  <div>Feb. 25, 2003 (age 22)</div>
+
+                  <div class="font-semibold">Birthplace</div>
+                  <div>Incheon, South Korea</div>
+
+                  <div class="font-semibold">Nationality</div>
+                  <div>Korean</div>
+
+                  <div class="font-semibold">Zodiac sign</div>
+                  <div>♓️ Pisces / 🐐 Goat</div>
+
+                  <div class="font-semibold">Position</div>
+                  <div>Leader / Main Vocalist</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg"
+            >
+              <img
+                src="./Assets/sullyoon.jpg"
+                class="h-52 w-full object-cover"
+                style="object-position: top 85%"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-xl">Sullyoon</h3>
+                <h3 class="font-semibold">Seol Yoon-A (Hangul: 설윤아)</h3>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-white/80">
+                  <div class="font-semibold">Birthdate</div>
+                  <div>Jan. 26, 2004 (age 21)</div>
+
+                  <div class="font-semibold">Birthplace</div>
+                  <div>Daejeon, South Korea</div>
+
+                  <div class="font-semibold">Nationality</div>
+                  <div>Korean</div>
+
+                  <div class="font-semibold">Zodiac sign</div>
+                  <div>♒️ Aquarius / 🐒 Monkey</div>
+
+                  <div class="font-semibold">Position</div>
+                  <div>Lead Vocalist / Dancer / Visual</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg"
+            >
+              <img
+                src="./Assets/bae.jpg"
+                class="h-52 w-full object-cover object-[top_75%]"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-xl">Bae</h3>
+                <h3 class="font-semibold">Bae Jin-Sol (Hangul: 배진솔)</h3>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-white/80">
+                  <div class="font-semibold">Birthdate</div>
+                  <div>Dec. 28, 2004 (age 21)</div>
+
+                  <div class="font-semibold">Birthplace</div>
+                  <div>Yangsan, South Korea</div>
+
+                  <div class="font-semibold">Nationality</div>
+                  <div>Korean</div>
+
+                  <div class="font-semibold">Zodiac sign</div>
+                  <div>♑️ Capricorn / 🐒 Monkey</div>
+
+                  <div class="font-semibold">Position</div>
+                  <div>Lead Vocalist / Dancer</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg"
+            >
+              <img
+                src="./Assets/jiwoo.jpg"
+                class="h-52 w-full object-cover"
+                style="object-position: top 85%"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-xl">Jiwoo</h3>
+                <h3 class="font-semibold">Kim Ji-Woo (Hangul: 김지우)</h3>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-white/80">
+                  <div class="font-semibold">Birthdate</div>
+                  <div>Apr. 13, 2005 (age 20)</div>
+
+                  <div class="font-semibold">Birthplace</div>
+                  <div>Namyangju, South Korea</div>
+
+                  <div class="font-semibold">Nationality</div>
+                  <div>Korean</div>
+
+                  <div class="font-semibold">Zodiac sign</div>
+                  <div>♈️ Aries / 🐓 Rooster</div>
+
+                  <div class="font-semibold">Position</div>
+                  <div>Main Dancer/ Reaper / Vocalist</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg"
+            >
+              <img
+                src="./Assets/kyujin.jpg"
+                class="h-52 w-full object-cover object-[top_75%]"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-xl">Kyujin</h3>
+                <h3 class="font-semibold">Jang Kyu-Jin (Hangul: 장규진)</h3>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-white/80">
+                  <div class="font-semibold">Birthdate</div>
+                  <div>May 26, 2006 (age 19)</div>
+
+                  <div class="font-semibold">Birthplace</div>
+                  <div>Bundang-gu, Seongnam, Gyeonggi-do, South Korea</div>
+
+                  <div class="font-semibold">Nationality</div>
+                  <div>Korean</div>
+
+                  <div class="font-semibold">Zodiac sign</div>
+                  <div>♊️ Gemini / 🐕 Dog</div>
+
+                  <div class="font-semibold">Position</div>
+                  <div>Main Dancer/ Reaper / Vocalist / Maknae</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM TORN -->
+        <svg
+          class="absolute bottom-0 left-0 w-full h-20 z-20 pointer-events-none"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#000"
+            d="M0,40 C80,80 160,0 240,30 320,60 400,20 480,40
+            560,60 640,10 720,30 800,50 880,20 960,40
+            1040,60 1120,10 1200,30 1280,50 1360,20 1440,40
+            L1440,100 L0,100 Z"
+          />
+        </svg>
+      </section>
+
+      <!-- Portfolio Page -->
+      <section
+        id="portfolio-page"
+        class="relative bg-black min-h-screen flex flex-col items-center justify-start overflow-hidden"
+      >
+        <!-- TORN PAPER TOP -->
+        <svg
+          class="absolute -top-1 left-0 w-full h-24 rotate-180 z-20 pointer-events-none"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#000000"
+            d="M0,40 C80,80 160,0 240,30 320,60 400,20 480,40
+                560,60 640,10 720,30 800,50 880,20 960,40
+                1040,60 1120,10 1200,30 1280,50 1360,20 1440,40
+                L1440,100 L0,100 Z"
+          />
+        </svg>
+
+        <!-- BACKGROUND IMAGE -->
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('./Assets/nmixx-poster3.jpg')"
+        ></div>
+
+        <!-- DARK OVERLAY -->
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <!-- CONTENT + GRID -->
+        <div
+          class="relative z-10 flex flex-col items-center text-white px-4 sm:px-6 md:px-12 lg:px-24 pt-28 pb-32 w-full max-w-7xl"
+        >
+          <!-- Header Text -->
+          <div class="text-center max-w-5xl mb-14">
+            <h1 class="text-3xl font-bold">Our Songs</h1>
+            <p class="mt-4 text-white/90 leading-relaxed">
+              Since our debut, we’ve released around 42 official songs,
+              including 1 full album, 4 EPs, and 3 single albums. Each song is a
+              part of our journey, showing off our unique style, energy, and
+              creativity. From powerful performances to emotional lyrics, we put
+              our hearts into every track. We hope our music can inspire,
+              excite, and connect with fans all around the world—because every
+              song we create is for you!
+            </p>
+          </div>
+
+          <!-- HORIZONTAL SCROLL GRID -->
+          <div
+            class="flex gap-6 w-full py-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none overscroll-x-contain scroll-smooth px-3 sm:px-4 md:px-0 md:justify-center"
+          >
+            <!-- CARD -->
+            <div
+              class="flex-shrink-0 w-[85vw] sm:w-72 md:w-80 bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg snap-center"
+            >
+              <img
+                src="./Assets/Blue Valentine.png"
+                class="h-44 sm:h-52 w-full object-cover object-[top_80%]"
+              />
+              <div class="p-4 min-h-[12rem] md:h-64 flex flex-col">
+                <h3 class="font-semibold mb-2">Blue Valentine</h3>
+                <p class="text-sm text-white/80 overflow-y-auto">
+                  Our first full album, Blue Valentine, was released on October
+                  13, 2025, and we couldn’t be more excited to share it with
+                  you! The title track, “Blue Valentine”, sets the tone for the
+                  album, and each song represents a part of our journey and
+                  growth. The album includes: “Blue Valentine”, “SPINNIN’ ON
+                  IT”, “Phoenix”, “Reality Hurts”, “RICO”, “Game Face”,
+                  “PODIUM”, “Crush On You”, “ADORE U”, “Shape of Love”, “O.O
+                  Part 1 (Baila)”, and “O.O Part 2 (Superhero)”. Every track is
+                  filled with our energy, creativity, and passion, and we hope
+                  it connects with you as much as it does with us!
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div
+              class="flex-shrink-0 w-[85vw] sm:w-72 md:w-80 bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg snap-center"
+            >
+              <img
+                src="./Assets/Fe3O4 FORWARD.png"
+                class="h-44 sm:h-52 w-full object-cover object-[top_80%]"
+              />
+              <div class="p-4 min-h-[12rem] md:h-64 flex flex-col">
+                <h3 class="font-semibold mb-2">Fe3O4: FORWARD</h3>
+                <p class="text-sm text-white/80 overflow-y-auto">
+                  Our fourth EP, Fe3O4: FORWARD, was released on March 17, 2025,
+                  and we’re so excited to share it with you! The title track,
+                  “KNOW ABOUT ME”, captures our energy and growth, and we also
+                  gave you a taste with the pre-release track “High Horse”. The
+                  EP includes all the songs that reflect our journey and style:
+                  “KNOW ABOUT ME”, “Slingshot (<★)”, “Golden Recipe”,
+                  “Papillon”, and “Ocean”. Every track on Fe3O4: FORWARD is a
+                  part of our story, and we hope it inspires, excites, and
+                  connects with all of you, our amazing fans!
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div
+              class="flex-shrink-0 w-[85vw] sm:w-72 md:w-80 bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg snap-center"
+            >
+              <img
+                src="./Assets/Fe3O4 STICK OUT.png"
+                class="h-44 sm:h-52 w-full object-cover object-[top_80%]"
+              />
+              <div class="p-4 min-h-[12rem] md:h-64 flex flex-col">
+                <h3 class="font-semibold mb-2">Fe3O4: STICK OUT</h3>
+                <p class="text-sm text-white/80 overflow-y-auto">
+                  Our third EP, Fe3O4: STICK OUT, was released on August 19,
+                  2024, and we’re so excited for you to hear it! This EP
+                  includes all the tracks that represent our growth and energy:
+                  “See That?”, “SICKUHH”, “Red Light Sign, But We Go”, “BEAT
+                  BEAT”, “Moving On”, and “Love Is Lonely”. Each song on Fe3O4:
+                  STICK OUT is part of our journey, showing off our style,
+                  passion, and creativity, and we hope it connects with you just
+                  as much as it does with us!
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div
+              class="flex-shrink-0 w-[85vw] sm:w-72 md:w-80 bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg snap-center"
+            >
+              <img
+                src="./Assets/Fe3O4 BREAK.png"
+                class="h-44 sm:h-52 w-full object-cover object-[top_75%]"
+              />
+              <div class="p-4 min-h-[12rem] md:h-64 flex flex-col">
+                <h3 class="font-semibold mb-2">Fe3O4: BREAK</h3>
+                <p class="text-sm text-white/80 overflow-y-auto">
+                  Our second EP, Fe3O4: BREAK, was released on January 15, 2024,
+                  and we’re thrilled to share it with you! The title track,
+                  “DASH”, shows our energy, style, and growth since our debut.
+                  Before the full EP dropped, we gave you a sneak peek with
+                  “Soñar (Breaker)”, which we pre-released on December 4, 2023.
+                  Every track on Fe3O4: BREAK is part of our journey, and we
+                  hope it inspires, excites, and connects with all of you, our
+                  amazing fans!
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div
+              class="flex-shrink-0 w-[85vw] sm:w-72 md:w-80 bg-black/60 backdrop-blur rounded-xl overflow-hidden shadow-lg snap-center"
+            >
+              <img
+                src="./Assets/expergo.png"
+                class="h-44 sm:h-52 w-full object-cover object-[top_80%]"
+              />
+              <div class="p-4 min-h-[12rem] md:h-64 flex flex-col">
+                <h3 class="font-semibold mb-2">Expérgo</h3>
+                <p class="text-sm text-white/80 overflow-y-auto">
+                  Our first EP, Expergo, was released on March 20, 2023, and
+                  we’re so excited to share it with you! The title track, “Love
+                  Me Like This”, represents our energy and style, and it’s a
+                  song we put our hearts into. Before the full EP dropped, we
+                  gave you a taste with “Young, Dumb, Stupid”, which we
+                  pre-released on March 13, 2023. Each track on Expergo is part
+                  of our journey, and we hope it connects with you as much as it
+                  does with us.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TORN PAPER BOTTOM -->
+        <svg
+          class="absolute bottom-0 left-0 w-full h-24 drop-shadow-lg"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#000000"
+            d="M0,40 C80,80 160,0 240,30 320,60 400,20 480,40
+                560,60 640,10 720,30 800,50 880,20 960,40
+                1040,60 1120,10 1200,30 1280,50 1360,20 1440,40
+                L1440,100 L0,100 Z"
+          />
+        </svg>
+      </section>
+
+      <!-- Message Us Page -->
+      <section
+        id="message-us-page"
+        class="relative w-full bg-cover bg-center px-4 sm:px-6 md:px-16 lg:px-28 pt-24 pb-32 min-h-screen overflow-hidden"
+        style="background-image: url('./Assets/nmixx-poster5.jpg')"
+      >
+        <!-- TORN PAPER TOP -->
+        <svg
+          class="absolute -top-1 left-0 w-full h-24 rotate-180 z-20 pointer-events-none"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#000000"
+            d="M0,40 C80,80 160,0 240,30 320,60 400,20 480,40
+              560,60 640,10 720,30 800,50 880,20 960,40
+              1040,60 1120,10 1200,30 1280,50 1360,20 1440,40
+              L1440,100 L0,100 Z"
+          />
+        </svg>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- CONTENT -->
+        <div class="relative z-10 max-w-6xl mx-auto text-white">
+          <!-- HEADER -->
+          <header class="mb-12 text-center md:text-left">
+            <h2 class="text-3xl font-bold">Message Us</h2>
+            <p class="mt-2 max-w-2xl text-white/80">
+              Have questions or want to work with us? Send us a message and
+              we'll get back to you promptly.
+            </p>
+          </header>
+
+          <!-- GRID -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+            <!-- FORM -->
+            <form
+              class="space-y-6 bg-black/50 backdrop-blur p-6 sm:p-8 rounded-xl"
+            >
+              <!-- Nama -->
+              <div class="flex flex-col gap-2">
+                <label class="font-medium">Nama</label>
+                <input
+                  type="text"
+                  placeholder="Nama"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-green-400"
+                />
+              </div>
+
+              <!-- Tanggal Lahir -->
+              <div class="flex flex-col gap-2">
+                <label class="font-medium">Tanggal Lahir</label>
+                <input
+                  type="date"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-green-400"
+                />
+              </div>
+
+              <!-- Jenis Kelamin -->
+              <div class="flex flex-col gap-2">
+                <label class="font-medium">Jenis Kelamin</label>
+                <div class="flex gap-6">
+                  <label class="flex items-center gap-2">
+                    <input type="radio" name="gender" />
+                    Laki-Laki
+                  </label>
+                  <label class="flex items-center gap-2">
+                    <input type="radio" name="gender" />
+                    Perempuan
+                  </label>
+                </div>
+              </div>
+
+              <!-- Pesan -->
+              <div class="flex flex-col gap-2">
+                <label class="font-medium">Pesan</label>
+                <textarea
+                  placeholder="Pesan"
+                  class="w-full h-32 border border-gray-300 rounded-lg px-4 py-2 text-black resize-none focus:outline-none focus:ring-2 focus:ring-green-400"
+                ></textarea>
+              </div>
+
+              <button
+                type="button"
+                class="w-full bg-green-400 hover:bg-green-500 text-black font-medium py-2 rounded-lg transition"
+              >
+                Submit
+              </button>
+            </form>
+
+            <!-- PREVIEW -->
+            <div
+              id="previewBox"
+              class="bg-black/60 backdrop-blur rounded-xl p-6 sm:p-8 text-white flex items-center"
+            >
+              <p class="italic text-white/90 leading-relaxed">
+                Fill out the form to see the preview here.
+                <br /><br />
+                <span class="not-italic font-medium">Example output:</span
+                ><br />
+                Nama: Pande Komang Theo Asta<br />
+                Tanggal Lahir: 02 Juli 2002<br />
+                Jenis Kelamin: Laki - Laki<br />
+                Pesan: Halo, saya tertarik untuk bekerja sama dengan Anda!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TORN PAPER BOTTOM -->
+        <svg
+          class="absolute bottom-0 left-0 w-full h-24 z-20 pointer-events-none"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#000000"
+            d="M0,40 C80,80 160,0 240,30 320,60 400,20 480,40
+              560,60 640,10 720,30 800,50 880,20 960,40
+              1040,60 1120,10 1200,30 1280,50 1360,20 1440,40
+              L1440,100 L0,100 Z"
+          />
+        </svg>
+      </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+      <p class="text-center p-4">© 2025 Nswer Project. All rights reserved.</p>
+    </footer>
+
+    <!-- JS External -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

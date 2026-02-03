@@ -1,0 +1,51 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    border: 1px solid blue;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+    background-color: gainsboro;
+    background-image: url(./Assets/Blue-Valentine.png);
+    background-size: cover;
+    background-position: center;
+}.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    border: 1px solid blue;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+    background-color: gainsboro;
+    background-image: url(./Assets/Blue-Valentine.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.input-date {
+    width: 100%;
+    border: 1px solid #d1d5db;      /* border-gray-300 */
+    border-radius: 0.5rem;         /* rounded-lg */
+    padding: 0.5rem 1rem;          /* px-4 py-2 */
+    color: #374151;                /* text-gray-700 */
+    outline: none;
+    }
+
+    .input-date:focus {
+    border-color: #3b82f6;         /* blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4); /* focus:ring-2 */
+    }
