@@ -13,7 +13,7 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 
     background-color: gainsboro;
-    background-image: url(./Assets/Blue-Valentine.png);
+    background-image: url(./../Assets/Blue-Valentine.png);
     background-size: cover;
     background-position: center;
 }.main-header {
@@ -31,7 +31,7 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 
     background-color: gainsboro;
-    background-image: url(./Assets/Blue-Valentine.png);
+    background-image: url(./../Assets/Blue-Valentine.png);
     background-size: cover;
     background-position: center;
 }

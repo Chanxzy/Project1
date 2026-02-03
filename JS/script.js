@@ -46,22 +46,37 @@ document.addEventListener("DOMContentLoaded", () => {
         const dob = dobInput.value;
         const message = messageInput.value.trim();
         const gender = [...genderInputs].find(g => g.checked)?.value || "-";
-
         // VALIDASI PESAN
         if (message === "") {
             alert("Pesan tidak boleh kosong!");
             return;
         }
 
+        const now = new Date();
+
         previewBox.innerHTML = `
-            <p class="font-semibold mb-4">
-                Current time : ${new Date().toString()}
-            </p>
-            <p><b>Nama</b> : ${name || "-"}</p>
-            <p><b>Tanggal Lahir</b> : ${dob || "-"}</p>
-            <p><b>Jenis Kelamin</b> : ${gender}</p>
-            <p class="mt-2"><b>Pesan</b> :</p>
-            <p class="italic">"${message}"</p>
+        <div class="space-y-4 text-sm leading-relaxed">
+            <!-- TIME -->
+            <div>
+                <p class="font-semibold text-white/80">Current time</p>
+                <p class="text-white">
+                    ${now.toLocaleString("id-ID", {
+                    weekday: "short",
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit"
+                    })}
+                </p>
+            </div>
+            <div class="text-white text-sm leading-relaxed space-y-1">
+                <p><b>Nama</b>: ${name || "-"}</p>
+                <p><b>Tanggal Lahir</b>: ${dob || "-"}</p>
+                <p><b>Jenis Kelamin</b>: ${gender || "-"}</p>
+                <p><b>Pesan</b>: ${message || "-"}</p>
+            </div>
+        </div>
         `;
     }
 
